@@ -137,6 +137,8 @@ UMLClassNode[classSymbol_String, opts : OptionsPattern[]] :=
       regular = OptionValue["Regular"],
       enColQ = TrueQ[OptionValue["EntityColumn"]], res, tbl},
 
+      regular = Select[Complement[regular, abstract], !MemberQ[abstract, Head[#]]&];
+
       res = Join[abstract, regular];
       res = res /. Map[# -> Style[#, Italic] &, abstract];
       (*Print[{abstract,MemberQ[abstract,classSymbol]}];*)
