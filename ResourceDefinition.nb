@@ -1095,12 +1095,13 @@ text that users will see when visiting the main landing page of your paclet.",
  CellID->433339604,ExpressionUUID->"8bd9d26d-96e4-467e-b1f9-2aaf73cb8052"],
 
 Cell["\<\
-This package has functions for the generation Unified Modeling Language (UML) \
-diagrams according to specified relationships of symbols that represent \
-classes and by introspection of code.\
+This package includes functions for creating Unified Modeling Language (UML) \
+diagrams based on specified relationships between symbols that represent \
+classes, as well as through code introspection.\
 \>", "Text",
  TaggingRules->{},
- CellChangeTimes->{{3.9378352931439953`*^9, 3.9378353292944202`*^9}},
+ CellChangeTimes->{{3.9378352931439953`*^9, 3.9378353292944202`*^9}, {
+   3.937857025744952*^9, 3.937857027549883*^9}, 3.937857096709149*^9},
  CellTags->"DefaultContent",
  CellID->441612482,ExpressionUUID->"54fcc5a7-44f1-4620-a13f-d5b74ca6a911"]
 }, Open  ]],
@@ -1242,11 +1243,12 @@ Cell[TextData[{
   ButtonData->{
     URL["https://plantuml.com"], None},
   ButtonNote->"https://plantuml.com"],
- " imags using Java or Python."
+ " images: one is using Java, the other is using Python."
 }], "Notes",
  TaggingRules->{},
  CellChangeTimes->{{3.937835681056147*^9, 3.937835765785829*^9}, {
-  3.937839352808865*^9, 3.937839364114751*^9}},
+  3.937839352808865*^9, 3.937839364114751*^9}, {3.9378583807124233`*^9, 
+  3.937858420141241*^9}},
  CellID->298063821,ExpressionUUID->"9f39bce9-6dca-4417-8261-0dca41fe6357"]
 }, Open  ]],
 
@@ -1355,7 +1357,9 @@ general overview of your paclet.", "MoreInfoText"], Background ->
 Cell[BoxData[
  TemplateBox[{},
   "MainGuideChooserTemplate"]], "MainGuideChooser",
- TaggingRules->{"Refreshing" -> False, "Relative" -> True},
+ TaggingRules->{
+  "Refreshing" -> False, "Relative" -> True, "MainGuidePageString" -> 
+   "Documentation/English/Guides/UMLdiagramsgeneration.nb"},
  CellTags->"MainGuidePagePanel",
  CellID->614786987,ExpressionUUID->"73b11e06-afaa-481c-8560-f7e4947d2219"]
 }, Open  ]]
@@ -1452,7 +1456,7 @@ Cell[BoxData[
    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input", "Excluded",
  TaggingRules->{},
  InitializationCell->True,
- CellLabel->"In[26]:=",
+ CellLabel->"In[61]:=",
  CellID->996717066,ExpressionUUID->"cb703cbd-c259-4ebe-b249-8b8b1d09d44d"],
 
 Cell[BoxData[
@@ -1461,7 +1465,7 @@ Cell[BoxData[
   ";"}]], "Input", "Excluded",
  TaggingRules->{},
  InitializationCell->True,
- CellLabel->"In[27]:=",
+ CellLabel->"In[62]:=",
  CellID->172764492,ExpressionUUID->"2f169cd9-06b7-4fa4-b873-53dca75efad0"]
 }, Open  ]],
 
@@ -1844,7 +1848,7 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"Clear", "[", 
     RowBox[{"AbstractClass", ",", "ConcreteOne", ",", "ConcreteTwo"}], "]"}], 
-   ";"}], "\n"}], "\[IndentingNewLine]", 
+   ";"}], "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"CLASSHEAD", "=", "AbstractClass"}], ";"}], "\n", 
  RowBox[{
@@ -1878,7 +1882,7 @@ Cell[BoxData[{
     RowBox[{
      RowBox[{"CLASSHEAD", "[", "d", "]"}], "[", 
      RowBox[{"\"\<PrimitiveOperation2\>\"", "[", "]"}], "]"}]}]}], 
-  "\n"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{
    RowBox[{"ConcreteOne", "[", "d_", "]"}], "[", "s_", "]"}], ":=", 
@@ -1907,7 +1911,7 @@ Cell[BoxData[{
       RowBox[{"[", "1", "]"}], "]"}], "*", 
      RowBox[{"d", "[", 
       RowBox[{"[", "2", "]"}], "]"}]}]}], ";"}], 
-  "\n"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{
    RowBox[{"ConcreteTwo", "[", "d_", "]"}], "[", "s_", "]"}], ":=", 
@@ -1937,7 +1941,7 @@ Cell[BoxData[{
      RowBox[{"[", "2", "]"}], "]"}]}]}], ";"}]}], "Input",
  TaggingRules->{},
  CellChangeTimes->{{3.9378345673030252`*^9, 3.93783456730649*^9}},
- CellLabel->"In[29]:=",
+ CellLabel->"In[64]:=",
  CellID->2120635979,ExpressionUUID->"f17e57aa-92d5-4394-ba46-be30a20f951b"],
 
 Cell["Here is the corresponding UML diagram:", "Text",
@@ -1954,7 +1958,7 @@ Cell[BoxData[
   "]"}]], "Input",
  TaggingRules->{},
  CellChangeTimes->{{3.937836406491391*^9, 3.937836407200148*^9}},
- CellLabel->"In[50]:=",
+ CellLabel->"In[76]:=",
  CellID->696245705,ExpressionUUID->"f213013d-619b-4b6f-ab72-5b4dd01536e3"],
 
 Cell[BoxData[
@@ -2087,6 +2091,7 @@ $CellContext`ConcreteTwo}, {{{1, 2}, {3, 2}}, Null}, {
             },
             AutoDelete->False,
             GridBoxAlignment->{"Columns" -> {{Left}}},
+            
             GridBoxDividers->{
              "Columns" -> {{True}}, "Rows" -> {True, True, False}, 
               "RowsIndexed" -> {-1 -> True}},
@@ -2137,9 +2142,9 @@ $CellContext`ConcreteTwo}, {{{1, 2}, {3, 2}}, Null}, {
   FormatType->TraditionalForm,
   FrameTicks->None]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.937836407692978*^9},
- CellLabel->"Out[50]=",
- CellID->1745771350,ExpressionUUID->"af1ee79c-9d7d-4632-9421-fe6b0871ca54"]
+ CellChangeTimes->{3.937836407692978*^9, 3.937857842792033*^9},
+ CellLabel->"Out[76]=",
+ CellID->279296476,ExpressionUUID->"ac4a9098-620d-4821-94d1-c6024952ccc0"]
 }, Open  ]],
 
 Cell["Here is a restyled version of the diagram above:", "Text",
@@ -2174,7 +2179,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.937836379967536*^9, 3.9378363806497602`*^9}, {
   3.937836433197398*^9, 3.937836462352631*^9}, {3.93783674436401*^9, 
   3.9378367857188272`*^9}, {3.9378368846225557`*^9, 3.937836917603426*^9}},
- CellLabel->"In[87]:=",
+ CellLabel->"In[77]:=",
  CellID->159568015,ExpressionUUID->"1bbcb509-6e38-4850-9643-6106a3e1e805"],
 
 Cell[BoxData[
@@ -2383,9 +2388,10 @@ $CellContext`ConcreteTwo}, {{{1, 2}, {3, 2}}, Null}, {
  CellChangeTimes->{
   3.937836381279517*^9, {3.937836452104978*^9, 3.9378364630291348`*^9}, {
    3.937836770786364*^9, 3.937836786199745*^9}, {3.937836885585025*^9, 
-   3.937836918233287*^9}, {3.937837617679062*^9, 3.937837635400372*^9}},
- CellLabel->"Out[87]=",
- CellID->1142917235,ExpressionUUID->"b9b52395-92c0-4fdf-b7d6-5ba81702a729"]
+   3.937836918233287*^9}, {3.937837617679062*^9, 3.937837635400372*^9}, 
+   3.9378578446300297`*^9},
+ CellLabel->"Out[77]=",
+ CellID->1580370507,ExpressionUUID->"dbaa29d1-ff41-4503-b628-88818637b341"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2399,7 +2405,11 @@ Cell[BoxData[
  CellID->431253275,ExpressionUUID->"1edc0021-3ca8-48ec-b39e-937ee7d13e14"],
 
 Cell[TextData[{
- "Here is an example of ",
+ "The outputs of ",
+ Cell[BoxData[
+ "UMLClassNode"], "InlineFormula",ExpressionUUID->
+  "102523b4-33e0-49f5-a4ec-d8453cf119ab"],
+ " are used in graphs representing UML class diagrams. Here ",
  Cell[BoxData[
   TagBox[
    ButtonBox[
@@ -2415,10 +2425,11 @@ Cell[TextData[{
    MouseAppearanceTag["LinkHand"]]], "InlineFormula",
   FontFamily->"Source Sans Pro",ExpressionUUID->
   "cdd9d0d1-23db-4718-b2e9-ba70748fcb5f"],
- " usage:"
+ " is used to produce different UML versions a class representation:"
 }], "Text",
  TaggingRules->{},
- CellChangeTimes->{{3.937836331656028*^9, 3.9378363366682043`*^9}},
+ CellChangeTimes->{{3.937836331656028*^9, 3.9378363366682043`*^9}, {
+  3.937858238591536*^9, 3.937858351039832*^9}},
  CellID->1747225432,ExpressionUUID->"29b01efa-18d4-4bab-a20d-aa80d16d3c59"],
 
 Cell[CellGroupData[{
@@ -2438,15 +2449,16 @@ Cell[BoxData[
         RowBox[{"{", "}"}], ",", 
         RowBox[{"{", 
          RowBox[{
-         "\"\<PrimitiveOperation1\>\"", ",", "\"\<PrimitiveOperation2\>\"", 
-          ",", "AbstractClass"}], "}"}]}], "}"}]}], "}"}], ",", 
+         "\"\<PrimitiveOperation1\>\"", ",", "\"\<PrimitiveOperation2\>\""}], 
+         "}"}]}], "}"}]}], "}"}], ",", 
     RowBox[{"{", 
      RowBox[{"ec", ",", 
       RowBox[{"{", 
        RowBox[{"False", ",", "True"}], "}"}]}], "}"}]}], "]"}]}]], "Input",
  TaggingRules->{},
- CellChangeTimes->{{3.937836315817039*^9, 3.93783631656802*^9}},
- CellLabel->"In[48]:=",
+ CellChangeTimes->{{3.937836315817039*^9, 3.93783631656802*^9}, {
+  3.9378580481029453`*^9, 3.9378580486129293`*^9}},
+ CellLabel->"In[87]:=",
  CellID->316484300,ExpressionUUID->"b4e87d9b-f969-495c-99a5-e1d385c9195e"],
 
 Cell[BoxData[
@@ -2526,21 +2538,7 @@ Cell[BoxData[
           StripOnInput->False,
           FontSlant->Italic]},
         {
-         StyleBox["AbstractClass",
-          StripOnInput->False,
-          FontSlant->Italic]},
-        {
          RowBox[{"\<\"Data\"\>", "[", "]"}]},
-        {
-         RowBox[{
-          StyleBox["\<\"PrimitiveOperation1\"\>",
-           StripOnInput->False,
-           FontSlant->Italic], "[", "]"}]},
-        {
-         RowBox[{
-          StyleBox["\<\"PrimitiveOperation2\"\>",
-           StripOnInput->False,
-           FontSlant->Italic], "[", "]"}]},
         {
          RowBox[{"\<\"TemplateMethod\"\>", "[", "]"}]}
        },
@@ -2580,21 +2578,7 @@ Cell[BoxData[
           StripOnInput->False,
           FontSlant->Italic]},
         {"\[SpanFromAbove]", 
-         StyleBox["AbstractClass",
-          StripOnInput->False,
-          FontSlant->Italic]},
-        {"\[SpanFromAbove]", 
          RowBox[{"\<\"Data\"\>", "[", "]"}]},
-        {"\[SpanFromAbove]", 
-         RowBox[{
-          StyleBox["\<\"PrimitiveOperation1\"\>",
-           StripOnInput->False,
-           FontSlant->Italic], "[", "]"}]},
-        {"\[SpanFromAbove]", 
-         RowBox[{
-          StyleBox["\<\"PrimitiveOperation2\"\>",
-           StripOnInput->False,
-           FontSlant->Italic], "[", "]"}]},
         {"\[SpanFromAbove]", 
          RowBox[{"\<\"TemplateMethod\"\>", "[", "]"}]}
        },
@@ -2610,9 +2594,11 @@ Cell[BoxData[
    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
   "Grid"]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.9378363171572933`*^9},
- CellLabel->"Out[48]=",
- CellID->419455498,ExpressionUUID->"ddbcb35b-03b2-4f09-a957-0e6d5a066e94"]
+ CellChangeTimes->{
+  3.9378363171572933`*^9, {3.93785783299835*^9, 3.937857846476041*^9}, 
+   3.93785804979993*^9},
+ CellLabel->"Out[87]=",
+ CellID->1249940232,ExpressionUUID->"ab76ba7c-b139-4057-a3f3-228880b0a3e3"]
 }, Open  ]]
 }, Open  ]],
 
@@ -5291,8 +5277,6 @@ Cell["Additional information about limitations, issues, etc.", "Text",
  CellTags->{"DefaultContent", "TabNext"},
  CellID->908162033,ExpressionUUID->"d5ed9c54-2f9b-4247-93ef-03b4b6c15fb8"],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  DynamicBox[ToBoxes[
   GeneralUtilities`Progress`PackagePrivate`$dynamicItem$76299, StandardForm],
@@ -5300,62 +5284,12 @@ Cell[BoxData[
  TaggingRules->{},
  CellChangeTimes->{3.93783775740738*^9},
  CellLabel->"During evaluation of In[88]:=",
- CellID->305365635,ExpressionUUID->"11c6f8f0-69e1-42a2-ab1f-362ddb85d151"],
-
-Cell[BoxData[
- TagBox[
-  FrameBox[
-   TagBox[GridBox[{
-      {
-       TagBox[GridBox[{
-          {
-           StyleBox[
-            
-            DynamicBox[ToBoxes[
-             ResourceSystemClient`Private`$submitProgressContent, 
-              StandardForm],
-             ImageSizeCache->{143.4375, {2.080078125, 7.5}}],
-            StripOnInput->False,
-            FontFamily->"Roboto",
-            FontSize->10,
-            FontColor->RGBColor[0.5, 0.5, 0.5]]}
-         },
-         AutoDelete->False,
-         FrameStyle->Directive[1, 
-           RGBColor[0, 0, 0, 0]],
-         GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Automatic}}},
-         GridBoxBackground->{"Columns" -> {{None}}},
-         GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
-         GridBoxItemSize->{"Columns" -> {{24}}, "Rows" -> {{All}}},
-         GridBoxSpacings->{"Columns" -> {0, {0}, 0}, "Rows" -> {0.6, 0.6}}],
-        "Grid"]}
-     },
-     AutoDelete->False,
-     FrameStyle->Directive[
-       RGBColor[1, 0, 0], 
-       Dashing[{0, Small}]],
-     GridBoxAlignment->{"Rows" -> {{Top}}},
-     GridBoxFrame->{"Columns" -> None, "Rows" -> None},
-     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
-     GridBoxSpacings->{"Columns" -> {{0.3}}}],
-    "Grid"],
-   Background->RGBColor[0.9529411764705882, 0.9803921568627451, 1.],
-   FrameMargins->{{5, 5}, {1, 2}},
-   FrameStyle->Directive[1, 
-     RGBColor[0.788235294117647, 0.8509803921568627, 0.8980392156862745]],
-   RoundingRadius->3,
-   StripOnInput->False],
-  Deploy,
-  DefaultBaseStyle->"Deploy"]], "PrintTemporary",
- CellChangeTimes->{3.937839439891075*^9},
- CellLabel->"During evaluation of In[2]:=",
- CellID->1800830009,ExpressionUUID->"29745aa1-0f49-4228-8e33-1b9bc38236ef"]
-}, Open  ]]
+ CellID->305365635,ExpressionUUID->"11c6f8f0-69e1-42a2-ab1f-362ddb85d151"]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1166, 1129},
-WindowMargins->{{Automatic, 1023}, {Automatic, 62}},
+WindowMargins->{{Automatic, 1024}, {Automatic, 61}},
 WindowTitle->"UMLDiagramGeneration | Definition Notebook",
 DockedCells->{
   Cell[
@@ -5371,203 +5305,7 @@ DockedCells->{
    CellFrameMargins -> {{0, 0}, {2, 2}}, CellFrame -> {{0, 0}, {1, 0}}, 
    CacheGraphics -> False, CellOpen -> Dynamic[
      CurrentValue[
-      EvaluationNotebook[], {TaggingRules, "ToolsOpen"}, True]]], 
-  Cell[
-   BoxData[
-    StyleBox[
-     TagBox[
-      GridBox[{{
-         OverlayBox[{
-           StyleBox[
-            TagBox[
-             DynamicModuleBox[{Typeset`var$$ = False}, 
-              InterpretationBox[
-               StyleBox[
-                PaneSelectorBox[{False -> GridBox[{{
-                    OpenerBox[
-                    Dynamic[Typeset`var$$], Appearance -> Automatic, Enabled -> 
-                    Automatic, AutoAction -> False, ContinuousAction -> 
-                    False], 
-                    StyleBox[
-                    DynamicBox[
-                    ToBoxes[
-                    DateString[
-                    TimeZoneConvert[
-                    DateObject[
-                    3.937839400665898`16.347832989223388*^9, TimeZone -> 
-                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
-                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
-                    StandardForm], SingleEvaluation -> True, Evaluator -> 
-                    "System"], FontSlant -> Italic, FontColor -> 
-                    GrayLevel[0.5], FontSize -> 0.9 Inherited, StripOnInput -> 
-                    False]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                    AutoDelete -> False, 
-                    GridBoxBackground -> {"Columns" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}, 
-                    BaselinePosition -> {1, 1}], True -> GridBox[{{
-                    OpenerBox[
-                    Dynamic[Typeset`var$$], Appearance -> Automatic, Enabled -> 
-                    Automatic, AutoAction -> False, ContinuousAction -> 
-                    False], 
-                    StyleBox[
-                    DynamicBox[
-                    ToBoxes[
-                    DateString[
-                    TimeZoneConvert[
-                    DateObject[
-                    3.937839400665898`16.347832989223388*^9, TimeZone -> 
-                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
-                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
-                    StandardForm], SingleEvaluation -> True, Evaluator -> 
-                    "System"], FontSlant -> Italic, FontColor -> 
-                    GrayLevel[0.5], FontSize -> 0.9 Inherited, StripOnInput -> 
-                    False]}, {"", 
-                    PaneBox["\"\"", ImageMargins -> 0]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> 
-                    False, GridBoxBackground -> {"Columns" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}, 
-                    BaselinePosition -> {1, 1}]}, 
-                 Dynamic[
-                  TrueQ[Typeset`var$$]], Alignment -> Automatic, ImageSize -> 
-                 Automatic, ImageMargins -> 0, BaseStyle -> {}, 
-                 DefaultBaseStyle -> "OpenerView", BaselinePosition -> 
-                 Baseline], Deployed -> False, StripOnInput -> False], 
-               OpenerView[{
-                 Style[
-                  Dynamic[
-                   DateString[
-                    TimeZoneConvert[
-                    DateObject[
-                    3.937839400665898`16.347832989223388*^9, TimeZone -> 
-                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
-                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
-                   SingleEvaluation -> True, Evaluator -> "System"], 
-                  FontSlant -> Italic, FontColor -> GrayLevel[0.5], FontSize -> 
-                  0.9 Inherited], ""}, False]], DynamicModuleValues -> 
-              Automatic], Setting[#, {0}]& ], ShowContents -> False, 
-            StripOnInput -> False], 
-           StyleBox[
-            DynamicBox[
-             ToBoxes[
-              DateString[
-               TimeZoneConvert[
-                DateObject[
-                3.937839400665898`16.347832989223388*^9, TimeZone -> 0]], {
-               "MonthName", " ", "DayShort", ", ", "Year", " ", "Hour12Short",
-                 ":", "Minute", " ", "AMPMLowerCase"}], StandardForm], 
-             SingleEvaluation -> True, Evaluator -> "System"], FontSlant -> 
-            Italic, FontColor -> GrayLevel[0.5], FontSize -> 0.9 Inherited, 
-            StripOnInput -> False]}, Alignment -> {Right, Baseline}], 
-         "\"   \"", 
-         ItemBox[
-          StyleBox[
-           
-           DynamicModuleBox[{
-            DefinitionNotebookClient`Utilities`PackagePrivate`pi$$ = Mouseover[
-               Dynamic[
-               DefinitionNotebookClient`$StripeProgressDisplay, 
-                TrackedSymbols :> {
-                 DefinitionNotebookClient`$StripeProgressDisplay}], 
-               Button["Abort \[RightGuillemet]", FrontEndExecute[
-                  FrontEnd`EvaluatorAbort[Automatic]]; 
-                DefinitionNotebookClient`$ButtonsDisabled = False; Null, 
-                Appearance -> None, BaseStyle -> Dynamic[
-                  FEPrivate`If[
-                   CurrentValue["MouseOver"], {"HyperlinkActive"}, {
-                   "Hyperlink"}]], Method -> "Preemptive"], ImageSize -> 
-               All]}, 
-            DynamicBox[
-             ToBoxes[
-             DefinitionNotebookClient`Utilities`PackagePrivate`pi$$, 
-              StandardForm], 
-             TrackedSymbols :> {
-              DefinitionNotebookClient`Utilities`PackagePrivate`pi$$}], 
-            Initialization :> 
-            If[$SessionID =!= 26719049176543687010, 
-              DefinitionNotebookClient`Utilities`PackagePrivate`pi$$ = ""], 
-            DynamicModuleValues :> {}], LineBreakWithin -> Automatic, 
-           LineIndent -> 0, StripOnInput -> False], ItemSize -> Fit, 
-          StripOnInput -> False], "\"\"", 
-         TagBox[
-          ButtonBox[
-           TagBox[
-            PaneSelectorBox[{False -> GraphicsBox[{
-                 GrayLevel[
-                  NCache[
-                   Rational[64, 85], 0.7529411764705882]], 
-                 
-                 PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
-                  0.42426406871192845`}, {0.42426406871192845`, 
-                  0.282842712474619}}], 
-                 
-                 PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
-                  0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
-                  0.42426406871192845`}}]}, ImageSize -> 18, PlotRangePadding -> 
-                0, PlotRange -> 0.7, Background -> None], True -> GraphicsBox[{
-                 GrayLevel[
-                  NCache[
-                   Rational[128, 255], 0.5019607843137255]], 
-                 
-                 PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
-                  0.42426406871192845`}, {0.42426406871192845`, 
-                  0.282842712474619}}], 
-                 
-                 PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
-                  0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
-                  0.42426406871192845`}}]}, ImageSize -> 18, PlotRangePadding -> 
-                0, PlotRange -> 0.7, Background -> None]}, 
-             Dynamic[
-              CurrentValue["MouseOver"]], ImageSize -> Automatic, 
-             FrameMargins -> 0], 
-            MouseAppearanceTag["LinkHand"]], ButtonFunction :> 
-           With[{DefinitionNotebookClient`Stripes`PackagePrivate`nbo$ = 
-              EvaluationNotebook[]}, 
-             CurrentValue[
-              DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
-               DockedCells] = If[
-               TrueQ[
-                MemberQ[
-                 CurrentValue["ModifierKeys"], "Control"]], 
-               DeleteCases[
-                Flatten[{
-                  CurrentValue[
-                  DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
-                   DockedCells]}], 
-                Cell[
-                 Blank[], "StripeCell", 
-                 BlankNullSequence[]]], 
-               DeleteCases[
-                Flatten[{
-                  CurrentValue[
-                  DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
-                   DockedCells]}], 
-                Condition[
-                 Pattern[DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
-                  Blank[Cell]], 
-                 Not[
-                  FreeQ[
-                  DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
-                   "92093f2b-4ad5-49d3-92ea-51e61b7be84d"]]]]]], Appearance -> 
-           None, BoxID -> "92093f2b-4ad5-49d3-92ea-51e61b7be84d", Evaluator -> 
-           Automatic, Method -> "Preemptive"], 
-          MouseAppearanceTag["LinkHand"]]}}, 
-       GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, 
-       AutoDelete -> False, 
-       GridBoxItemSize -> {
-        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Grid"], 
-     "Text", FontSize -> 12, FontColor -> GrayLevel[0.25], StripOnInput -> 
-     False]], "StripeCell", CellFrameMargins -> {{20, 5}, {2, 2}}, 
-   CellFrame -> {{0, 0}, {1, 0}}, CellFrameColor -> GrayLevel[0.75]]},
+      EvaluationNotebook[], {TaggingRules, "ToolsOpen"}, True]]]},
 TaggingRules->{
  "ResourceType" -> "Paclet", "ResourceCreateNotebook" -> True, 
   "TemplateVersion" -> "2023.03.03", "CreationTimestamp" -> 
@@ -5608,8 +5346,8 @@ Fu6DuJJG2H9mK2QZ3X1Y8rjKVdsLU11Qbnfn/Mae/TiO1RZHs2bny+6Vwq5Sfi8TnHKi+1+K4NOh"]\
     "DefaultContentMethod" -> "Tagged", "HintPods" -> True, "LoadingMethod" -> 
     "Paclet", "PacletName" -> "PacletResource", "SourceID" -> 
     "8f99c2b0ee5e9f24d331c183562e905b4bbb1a6f"}, "ToolsOpen" -> True, 
-  "StatusMessage" -> ProgressIndicator[Appearance -> "Necklace"], 
-  "SubmissionReviewData" -> {"Review" -> False}, "AutoUpdate" -> True, 
+  "StatusMessage" -> "", "SubmissionReviewData" -> {"Review" -> False}, 
+  "AutoUpdate" -> True, 
   "PacletBuildData" -> {
    "LastBuiltArchive" -> 
     "/Volumes/Macintosh \
@@ -7026,7 +6764,6 @@ h/Fh4QMzDxZ+6PEFAOibv7E=
                    FaceForm[{
                     RGBColor[0.55294, 0.67451, 0.81176], 
                     Opacity[1.]}], 
-                   
                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
                     103.52, 249.47}, {43.272, 214.76}, {43.335, 284.22}, {
                     103.52, 249.47}}}]}, {
@@ -7870,7 +7607,6 @@ h/Fh4QMzDxZ+6PEFAOibv7E=
                 FaceForm[{
                   RGBColor[0.6902, 0.58824, 0.81176], 
                   Opacity[1.]}], 
-                
                 FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{120.87,
                   350.62}, {120.8, 281.08}, {60.68, 315.87}, {120.87, 
                  350.62}}}]}, {
@@ -12747,7 +12483,6 @@ directory.\""}, "PacletDirectoryChooserErrorTemplate"]], "AttachedMessage"],
                     GraphicsBox[{
                     Thickness[0.02439], 
                     StyleBox[{
-                    
                     FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
                     0}}}, {{{12.383, 36.391}, {35.711, 36.391}, {35.711, 
                     13.063}, {12.383, 13.063}, {12.383, 36.391}}}]}, {
